@@ -1,8 +1,9 @@
-package selenium_webdriver;
+package launch_browsers;
 
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class Run_WebDriver {
+public class launch_chrome_browser 
+{
 
 	public static void main(String[] args) 
 	{
@@ -21,10 +22,15 @@ public class Run_WebDriver {
 		 * 			System.setproperty("webdriver.chrome.driver","chromedriver.exe");
 		 */
 		
-		//Using chromedriver path create runtime environment variable
+		//Create Runtime environment variable for chromedriver
 		System.setProperty("webdriver.chrome.driver", "Drivers\\chromedriver.exe");
+		//launching  chrome automation browser
 		ChromeDriver chrome=new ChromeDriver();
+		//Load webpage to browser window/
 		chrome.get("http://facebook.com");
+		
+		
+		
 	}
 
 }
