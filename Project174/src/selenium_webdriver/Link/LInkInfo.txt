@@ -1,0 +1,63 @@
+Identify Link at HTML source :-->
+
+	=> Link contains  <a> anchor tag at backend html Source
+	=> Only links to identify webdriver have separate locator builders.
+			Linktext
+			PartialLintext.
+			
+			Note:--> Because UI developers design link with href & title
+				     unique properties instead of  ID & Name.
+
+	Linktext:-->  Locator identify only with original[Complete] linkname
+	Partiallinktext:--> Locator identify with original or partiallinkname.
+	
+	
+	Note:-->
+			linktext and partiallinktext are not complete locators to identify
+			link. Xpath and CssSelector support link identification using
+			href and title property.
+
+============================================================
+Example:--> Design script to identify link at webpage, using linkname.
+HtmlSource:-->
+		
+		<a  href="http://newjobs.com" > Create Job </a>
+
+		driver.findElement(By.linktext("Create Job")).click();
+
+===========================================================
+HtmlSource:--> identify link when link name designed under separate node.
+
+		<a href="http://singnup.com/forgot> 
+			<span> Forgot Account </span>
+		</a>
+
+		//Designing script to identify link at webpage using linkname..
+		driver.findElement(By.linktext("Forgot Account")).click();
+
+================================================================
+HtmlSource:--> identify link using partiallinktext locator.
+
+		<a href="http://findjob.com/newsearch> 
+			<strong> Selenium Tester</strong>
+			<span> In, Hyderabad </span>
+		</a>
+
+
+		Note:--> In above htmlsource link name available in two different 
+			nodes. So that we can't use original linkname to identify
+			link.
+
+		IDentifying with partial linktext:-->
+
+		driver.findElement(By.Partialinktext("Selenium Tester")).click();
+
+==================================================================
+		
+
+
+
+
+
+
+
