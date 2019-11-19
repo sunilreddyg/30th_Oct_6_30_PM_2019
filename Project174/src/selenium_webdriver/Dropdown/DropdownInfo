@@ -95,8 +95,7 @@ htmlsource:--->
 Example:---> Select UK option from dropdown using index
 
 Syntax:-->
-		Select ref=new Select(driver.findElement(By.name("Country"));
-		ref.selectbyindex(1);
+		new Select(driver.findElement(By.name("Country")).SelebyIndex(1);
 ============================================================
 ismultiple:---->
 
