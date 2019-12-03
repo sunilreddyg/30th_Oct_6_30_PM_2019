@@ -74,13 +74,21 @@ Example:--> Target Element with partial attribute properites
 
 Manual Browser session:-->
 			id="email_987fsdlsjlksdjflsdjf"
+			
 Automation browser session:-->
 			id="email_jflsdsdoijflksdjlsd"
+			
+			
+		=> in above scenario element id is dynamically changing from
+			manual browser session to automation browser session, Identify
+			element with xpath partial attribute syntax.
 
-
-	       		//*[contains(@id,'email')]
+   
+   			By.xpath("//*[contains(@id,'email')]");
+	       		
 ===================================================================..
 Example:--> Identify Location when Element Location duplicated at webpage..
+			With help of duplication index number.
 
 Recognize duplicate objects at webpage
 		
@@ -101,6 +109,60 @@ Recognize duplicate objects at webpage
 </html>		
 
  Syntax:-->
- 		   by.xpath("(//input[@id='email'])[2]");
+ 		  
+ 		  		(//input[@id='email'])[2]
+===========================================================================
+Example:--> Xpath With Multiple Attribute & innertext.
+
+
+		HtmSource:-->
+			<button  name="Sbtn"   type="Submit" > Selenium </button>
+				
+			=> With Multiple attributes
+				
+						//tagname[@Aname='Avalue'][@Aname='Avalue']
+						
+						//button[@name='Sbtn'][@type='submit']
+						
+						
+			
+			=> with multiple properties [ Attribute & InnerText	]	
+
+						//button[@Aname='Avalue'][text()='innertext']
+		
+						//button[@name='Sbtn'][text()='Selenium']
+						//button[@name='Sbtn'][contains(.,'Sel')]
+============================================================================
+Example:-->  Target Element with parent Node.
+
+
+HtmlSource:-->
+
+	<div id="login_conainer"  class="demo">
+		<input id="9ju7yg876"  type="text">  ---->Target Element
+	</div>	
+
+
+
+	Syntax:-->
+		parentnode  / childnode...
+
+		By.xpath("//div[@id='login_conainer']/input")
+========================================================================
+Example:-->  Target Element with parent Node. 
+
+
+HtmlSource:-->
+
+	<div id="login_conainer"  class="demo">
+		<input type="text">
+		<input type="text">  ---->Target Element
+	</div>	
+	
+	
+	By.xpath("//div[@id='login_container']/input[2]")
+============================================================================
+
+
 
 
