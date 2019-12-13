@@ -58,6 +58,8 @@ Example:--->Target firstname object
 ---------------------------------------------------------------------------------------------------->
 Example:-->
 	Switch to frame using  frame name:---->
+	Note:--> We can direclty deifine switch to frame
+			 when it have ID / Name property
 
 	Syntax:--->
 	driver.switchTo().frame(String framename);
@@ -80,7 +82,6 @@ Syntax:--->
 
 Example:--->
 		using above source find Frame Elemnet 
-	
 		driver.switchTo().frame(0);
 		
 		==> Identify location under frame
@@ -104,3 +105,14 @@ How to Switch to parent frame:---->
 	controls to parent frame we follow below syntax
 
 	driver.switchTo().parentframe();
+================================================================>
+Frame Syntax:-->
+		=> When frame have ID and Name Property
+		driver.switchTo().frame("ID/Name");
+		
+		=> Frame Have different properites otherthan ID
+		driver.switchTo().frame(driver.findElement(By.className("Class")));
+		
+		=> Switching to frame using index number.
+		driver.switchTo().frame(5);
+================================================================>>

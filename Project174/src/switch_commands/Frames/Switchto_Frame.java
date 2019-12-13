@@ -1,4 +1,4 @@
-package switch_commands;
+package switch_commands.Frames;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;

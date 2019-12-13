@@ -1,4 +1,4 @@
-package switch_commands;
+package switch_commands.Frames;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -28,7 +28,8 @@ public class SwitchTo_frame_Using_Navigation_Command {
 		
 		//Navigate back to page
 		driver.navigate().back();
-
+		
+		
 	}
 
 }
