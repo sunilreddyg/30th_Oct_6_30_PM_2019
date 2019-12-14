@@ -18,10 +18,6 @@ public class Switchto_Window_Using_Navigation_Command
 		System.out.println("main window title is => "+driver.getTitle());
 		
 		
-		//click External link to open New window
-		driver.findElement(By.xpath("//a[@title='Check PNR Status']")).click();
-		Thread.sleep(2000);
-		
 		//Switch to Window Using Navigation method.
 		driver.navigate().to("https://www.cleartrip.com/trains/pnr");
 		System.out.println("Current Focused window title is => "+driver.getTitle());
