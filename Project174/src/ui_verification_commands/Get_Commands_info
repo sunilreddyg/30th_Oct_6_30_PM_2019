@@ -1,0 +1,82 @@
+UI_Verification commands:-->
+	
+		=> In selenium all verification commands
+		start with getkeyword.
+		
+		=> These commands capture application original
+			behaviour at runtime and store behaviour
+			into userdefined reference variables.
+				
+		=>  After capture  actual behaviour at automation browser
+			we can compare with expected behaviour inorder to validate
+			test output.
+			
+		 Page verification commands:-->
+		 		These commands verify expected pages displayed
+		 		at automation browser.
+		 		
+		 		getTitle
+		 		getCurrentUrl
+		 		getPageSource
+		 		getWindowHandle
+		 		getWindowHandles
+		 		
+		 Element verification commands:-->
+		 		These commands verify expected element bahaviour preseted
+		 		at targeted location.
+		 		
+		 		getText
+		 		getAttribute
+		 		getCssvalue
+		 		getLocation
+		 		getSize
+		 		getTagname
+		 		getRect	
+===========================================================================	 		
+getTitle:--->
+			method capture current window title at runtime.
+			In webpapplication every page contain indepedent title.
+		
+			Syntax:-->
+					String Runtime_title=driver.getTitle();
+					System.out.println(Runtime_title);				
+====================================================================		
+getCurrenturl:-->
+				method capture current window Url at runtime.
+				In web application every page contains uniqe URL.
+			
+			Syntax:-->
+					String Runtime_url=driver.getCurrentUrl();
+					System.out.println(Runtime_url);				
+========================================================
+getPageSource:--->	
+			Method capture Entire pageSource into String format
+			during runtime.  [Backend HTML source]
+			
+			With in soruce we can verify
+					Title of a page
+					url of a page
+					Element ID's  &  HMTL Nodes 
+					page Text
+		
+			String pageSource=driver.getpageSource();
+			System.out.println(pageSoruce);
+==========================================
+getwindowhandle:---->
+	
+		Method return runtime dynamic ID of current window.			
+		Method helps to swicth window controls at runtime.
+		
+		String window_Id=driver.getwindowHandle();
+		System.out.println(window_Id);
+================================================================		
+getwindowhandles:-->
+		Method capture all window Runtime ID's opened throw
+		webdriver script.
+		
+		Set<String> allwidows=driver.getWindowhandles();
+		
+		Note:--> above method we use to switch between windows.
+================================================================		 		
+				
+				
