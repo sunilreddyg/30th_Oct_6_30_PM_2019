@@ -78,5 +78,48 @@ getwindowhandles:-->
 		
 		Note:--> above method we use to switch between windows.
 ================================================================		 		
+gettext:-->
+		  Method capture text presented at location, it only
+		  capture visible text at webpage...!
+		  
+		  Syntax:-->
+		  
+		  		WebElement Element=driver.findElement(By.id("LocationID"));
+				String Element_innerText=Element.getText();
+				System.out.println(Element_innerText);	
 				
+			Note:-->
+				1. If Element not contain innertext method return
+						empty status.
+						
+				2. IF selected element text hidden at webpage method 
+						return empty status.
+						
+				3. It capture selected element and it's child elemnets
+						innertext...	
+=========================================================================
+getAttribute("propertyname");
+	
+	Method capture runtime attribute value using attributename.
+				  
+				  
+		Syntax:-->  
+		  	WebElement Element=driver.findElement(By.id("x"));
+		  	String Attribute_value=Element.getAttribute("attributename");
+		  	System.out.println(Attribute_value);	
+		  	
+				  	
+  	Note:--> Developer use attributes, to chanage runtime
+  			behaviour of element. by capture element attributes
+  			at runtime we can prove element behaviour available
+			w.r.t client requirement.
+			
+			
+		  					
+				
+				
+				
+				
+				
+						
 				
