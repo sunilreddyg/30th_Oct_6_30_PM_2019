@@ -1,4 +1,4 @@
-package ui_verification_commands;
+package ui_verification_commands.For_Page;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
