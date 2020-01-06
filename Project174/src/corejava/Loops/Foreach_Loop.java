@@ -40,9 +40,9 @@ public class Foreach_Loop {
 		col.add("GRID");
 		col.add("WD");
 		
-		for (String Toolname : col) 
+		for (String eachtool : col) 
 		{
-			System.out.println(Toolname);
+			System.out.println(eachtool);
 		}
 		
 		
