@@ -154,12 +154,52 @@ visibilityOfElementLocated:-->
 			
 		WebdriverWait  wait=new WebDriverwait(driver,100);
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("x")));
+
+InvisibilityofElementLocated:-->
+
+		An expecation to verify selected element is invisible at webpage.
+		
+		new Webdriverwait(driver,10).until
+		(ExpectedConditions.InvisibilityofElementLocated(By.Id("ElementId")));
+		
+PresenceofElementLocated:-->
+		
+		An expecation to verify selected element presented at DOM
+				[Document Object model]
+
+		new Webdriverwait(driver,10).until
+		(ExpectedConditions.PresenceofElementLocated(By.Id("ElementId")));
+
+ElementSelectionStateTobe:-->
+
+		[This Command userfull to verify checkbox and radio button selection states]
+	
+		An expecation to verify selected element selection state is true/false.
+		
+		
+		new Webdriverwait(driver,10).until
+		(ExpectedConditions.ElementselectionStateTobe(By.Id("ElementId"),boolean true/false));
+		
+ElementtobeSelected:-->
+		
+		[This Command userfull to verify checkbox and radio button selection states]
+		
+		new Webdriverwait(driver,10).until
+		(ExpectedConditions.ElementtobeSelected(By.Id("ElementId"));
+	
+		Note;--> It works for only true condition..
+	
+ElementTobeClickable:-->
+		An expecation to verify selected element is a clickable position
+		
+		new Webdriverwait(driver,10).until
+		(ExpectedConditions.ElementTobeClickable(By.Id("ElementId"));	
 	
 textToBePresentInElementLocated:--->
 	An expectation to verify text presented at selected Element..
 		
-	WebdriverWait  wait=new WebDriverwait(driver,100);
-	wait.until(ExpectedConditions.textToBePresentInElementLocated
+	new WebDriverwait(driver,100).until
+	(ExpectedConditions.textToBePresentInElementLocated
 						(By.id("x"),"Expected Text"));
 							
 textToBePresentInElementValue:--->
@@ -170,12 +210,6 @@ textToBePresentInElementValue:--->
 					(By.id("x"),"inputvalue"));
 				
 	
-attributeContains:-->
-	   An expecation to verify expected arrtibute contains at webelemnt...	
-	
-		WebdriverWait  wait=new WebDriverwait(driver,100);
-		wait.until(ExpectedConditions.attributeContains(By.id("x"),"attributename","attributevalue"));
-				
 	
 Alertpresented:-->
 	  An expectatino to verify alert presented at webpage.
