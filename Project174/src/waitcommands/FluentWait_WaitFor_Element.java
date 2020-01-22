@@ -17,7 +17,7 @@ public class FluentWait_WaitFor_Element {
 		
 		
 		//Set Runtime environment variable for chrome driver
-		String chrome_path="Browser_Drivers\\chromedriver.exe";
+		String chrome_path="drivers\\chromedriver.exe";
 		System.setProperty("webdriver.chrome.driver", chrome_path);
 						
 		WebDriver driver=new ChromeDriver();
