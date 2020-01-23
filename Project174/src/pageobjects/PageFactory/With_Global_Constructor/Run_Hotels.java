@@ -1,29 +1,30 @@
-package pageobjects.PageFactory;
+package pageobjects.PageFactory.With_Global_Constructor;
 
 import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.support.PageFactory;
 
-public class Running_CT_Trains {
+public class Run_Hotels {
 
-	public static void main(String[] args) throws Exception {
+	public static void main(String[] args) throws Exception
+	{
 		
 		System.setProperty("webdriver.chrome.driver", "drivers\\chromedriver.exe");    
 		//browser initiation command
 		WebDriver driver=new ChromeDriver();
-		driver.get("https://www.cleartrip.com/trains");
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
 		
-		/*
-		 * Note:-->	
-		 * 		@Findby objects only identify using pagfactory class.
-		 */
-		CT_Trains trains=PageFactory.initElements(driver, CT_Trains.class);
-		trains.SearchTrain();
+		CT_Hotels hotel=new CT_Hotels(driver);
+		hotel.Verify_Hotels_page_Header();
+		hotel.Where_locality_EB.clear();
+		hotel.Where_locality_EB.sendKeys("HYD");
 		
+		Thread.sleep(5000);
+		driver.close();
 		
+
 	}
 
 }
