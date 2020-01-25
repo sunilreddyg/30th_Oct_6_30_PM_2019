@@ -2,7 +2,6 @@ package framework.DataDriven.Excel;
 
 import java.io.FileInputStream;
 import java.io.IOException;
-
 import org.apache.poi.xssf.usermodel.XSSFCell;
 import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
@@ -26,7 +25,7 @@ public class Read_Data_From_Excel
 		XSSFSheet sht=book.getSheet("Sheet1");
 		
 		//target row using sheet referral
-		XSSFRow row=sht.getRow(1);
+		XSSFRow row=sht.getRow(1);                      
 		
 		//Target cell using row referral
 		XSSFCell cell=row.getCell(0);
