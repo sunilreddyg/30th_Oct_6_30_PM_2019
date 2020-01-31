@@ -25,20 +25,23 @@ public class Extent_Reports_Using_ScreenShot {
 		driver.get("http://facebook.com");
 		
 		
-		
+		//Create Extent Report
 		String Filepath="Reports\\Report4.html";
 		ExtentReports logger=new ExtentReports(Filepath, true);
 		System.out.println("Reporter file created");
 			
 			ExtentTest test1=logger.startTest("Tc001_loginvalid");
 			
+				//Capture screen using webdriver scripting
 				String screen1_path="C:\\Users\\Administrator\\git\\30th_Oct_6_30_PM_2019\\Project174\\screens\\Screen1.png";
 				File src=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 				FileUtils.copyFile(src, new File(screen1_path));
 				
+				//Attach screen to extent report file.
 				test1.log(LogStatus.INFO, "Screen captured"
 				+test1.addScreenCapture(screen1_path));
 			
+			//Flush all runtime test reports to HTML file
 			logger.endTest(test1);
 			
 		

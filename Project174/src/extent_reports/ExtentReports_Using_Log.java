@@ -17,10 +17,10 @@ public class ExtentReports_Using_Log {
 				ExtentTest test=logger.startTest("Tc001_valid_login");
 				
 				test.log(LogStatus.INFO, "Browser launched");
-				test.log(LogStatus.INFO, "Email Enter successfull");
-				test.log(LogStatus.INFO, "password enter successfull");
-				test.log(LogStatus.INFO, "Login button clicked");
-				test.log(LogStatus.PASS, "As expected logout button displayed");
+				test.log(LogStatus.PASS, "Email Enter successfull");
+				test.log(LogStatus.FAIL, "password enter successfull");
+				test.log(LogStatus.SKIP, "Login button clicked");
+				test.log(LogStatus.FATAL, "As expected logout button displayed");
 				
 				
 				logger.endTest(test);

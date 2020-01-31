@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+  <reporter-output>
+    <line>
+      <![CDATA[without login verified]]>
+    </line>
+    <line>
+      <![CDATA[Tc001 Valid login verified]]>
+    </line>
+    <line>
+      <![CDATA[Tc002 Invalid login verified]]>
+    </line>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="63" started-at="2020-01-31T20:08:16 IST" finished-at="2020-01-31T20:08:16 IST">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="63" started-at="2020-01-31T20:08:16 IST" finished-at="2020-01-31T20:08:16 IST">
+      <class name="framework.Testng.Method_Description">
+        <test-method status="PASS" signature="Verify_login_without_data()[pri:0, instance:framework.Testng.Method_Description@578486a3]" name="Verify_login_without_data" duration-ms="15" started-at="2020-01-31T20:08:16 IST" finished-at="2020-01-31T20:08:16 IST">
+          <reporter-output>
+            <line>
+              <![CDATA[without login verified]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Verify_login_without_data -->
+        <test-method status="PASS" signature="tc002()[pri:0, instance:framework.Testng.Method_Description@578486a3]" name="tc002" duration-ms="0" started-at="2020-01-31T20:08:16 IST" description="verifying login with invalid data" finished-at="2020-01-31T20:08:16 IST">
+          <reporter-output>
+            <line>
+              <![CDATA[Tc002 Invalid login verified]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- tc002 -->
+        <test-method status="PASS" signature="tc001()[pri:0, instance:framework.Testng.Method_Description@578486a3]" name="tc001" duration-ms="0" started-at="2020-01-31T20:08:16 IST" description="Verifying login with valid data" finished-at="2020-01-31T20:08:16 IST">
+          <reporter-output>
+            <line>
+              <![CDATA[Tc001 Valid login verified]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- tc001 -->
+      </class> <!-- framework.Testng.Method_Description -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
