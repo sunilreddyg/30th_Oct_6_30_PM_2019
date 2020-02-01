@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [default]">
+  <test thread-count="5" name="defult(failed)">
+    <groups>
+      <run>
+        <include name="G3"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="framework.Testng.Groups.TestSuite2">
+        <methods>
+          <include name="tc006"/>
+        </methods>
+      </class> <!-- framework.Testng.Groups.TestSuite2 -->
+      <class name="framework.Testng.Groups.TestSuite3">
+        <methods>
+          <include name="tc008"/>
+          <include name="tc007"/>
+        </methods>
+      </class> <!-- framework.Testng.Groups.TestSuite3 -->
+      <class name="framework.Testng.Groups.TestSuite1">
+        <methods>
+          <include name="tc003"/>
+          <include name="tc001"/>
+        </methods>
+      </class> <!-- framework.Testng.Groups.TestSuite1 -->
+    </classes>
+  </test> <!-- defult(failed) -->
+</suite> <!-- Failed suite [default] -->
