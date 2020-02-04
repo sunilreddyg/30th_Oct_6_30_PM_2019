@@ -1,77 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="78" started-at="2020-02-03T19:56:52 IST" finished-at="2020-02-03T19:56:52 IST">
+  <suite name="Default suite" duration-ms="608" started-at="2020-02-04T20:06:43 IST" finished-at="2020-02-04T20:06:43 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="78" started-at="2020-02-03T19:56:52 IST" finished-at="2020-02-03T19:56:52 IST">
-      <class name="framework.Testng.DP.Application_Data">
-        <test-method status="PASS" signature="tc001(java.lang.String, java.lang.String)[pri:0, instance:framework.Testng.DP.Application_Data@35d176f7]" name="tc001" duration-ms="16" started-at="2020-02-03T19:56:52 IST" data-provider="dp" finished-at="2020-02-03T19:56:52 IST">
+    <test name="Default test" duration-ms="608" started-at="2020-02-04T20:06:43 IST" finished-at="2020-02-04T20:06:43 IST">
+      <class name="framework.Testng.Extent_Reports.Test_With_Reports">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:framework.Testng.Extent_Reports.Test_With_Reports@6321e813]" name="beforeClass" is-config="true" duration-ms="172" started-at="2020-02-04T20:06:43 IST" finished-at="2020-02-04T20:06:43 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="User_login()[pri:0, instance:framework.Testng.Extent_Reports.Test_With_Reports@6321e813]" name="User_login" duration-ms="16" started-at="2020-02-04T20:06:43 IST" finished-at="2020-02-04T20:06:43 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- User_login -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:framework.Testng.Extent_Reports.Test_With_Reports@6321e813]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2020-02-04T20:06:43 IST" finished-at="2020-02-04T20:06:43 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[arun]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[MQ001]]>
+                <![CDATA[public void framework.Testng.Extent_Reports.Test_With_Reports.User_login()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tc001 -->
-        <test-method status="PASS" signature="tc001(java.lang.String, java.lang.String)[pri:0, instance:framework.Testng.DP.Application_Data@35d176f7]" name="tc001" duration-ms="15" started-at="2020-02-03T19:56:52 IST" data-provider="dp" finished-at="2020-02-03T19:56:52 IST">
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:framework.Testng.Extent_Reports.Test_With_Reports@6321e813]" name="afterClass" is-config="true" duration-ms="374" started-at="2020-02-04T20:06:43 IST" finished-at="2020-02-04T20:06:43 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:framework.Testng.Extent_Reports.Test_With_Reports@6321e813]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2020-02-04T20:06:43 IST" finished-at="2020-02-04T20:06:43 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[ajay]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[MQ003]]>
+                <![CDATA[public void framework.Testng.Extent_Reports.Test_With_Reports.User_reg()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tc001 -->
-        <test-method status="PASS" signature="tc001(java.lang.String, java.lang.String)[pri:0, instance:framework.Testng.DP.Application_Data@35d176f7]" name="tc001" duration-ms="0" started-at="2020-02-03T19:56:52 IST" data-provider="dp" finished-at="2020-02-03T19:56:52 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[suresh]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[MQ002]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:framework.Testng.Extent_Reports.Test_With_Reports@6321e813]" name="afterMethod" is-config="true" duration-ms="0" started-at="2020-02-04T20:06:43 IST" finished-at="2020-02-04T20:06:43 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tc001 -->
-        <test-method status="PASS" signature="tc001(java.lang.String, java.lang.String)[pri:0, instance:framework.Testng.DP.Application_Data@35d176f7]" name="tc001" duration-ms="0" started-at="2020-02-03T19:56:52 IST" data-provider="dp" finished-at="2020-02-03T19:56:52 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[amar]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[MQ004]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:framework.Testng.Extent_Reports.Test_With_Reports@6321e813]" name="afterMethod" is-config="true" duration-ms="0" started-at="2020-02-04T20:06:43 IST" finished-at="2020-02-04T20:06:43 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tc001 -->
-      </class> <!-- framework.Testng.DP.Application_Data -->
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="User_reg()[pri:0, instance:framework.Testng.Extent_Reports.Test_With_Reports@6321e813]" name="User_reg" duration-ms="0" started-at="2020-02-04T20:06:43 IST" finished-at="2020-02-04T20:06:43 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- User_reg -->
+      </class> <!-- framework.Testng.Extent_Reports.Test_With_Reports -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

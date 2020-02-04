@@ -3,15 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="framework.Testng.Testng_WebDriver_Testcase">
+      <class name="framework.Testng.DP.Excel_integration.Excel_DataProvider_Intergration">
         <methods>
-          <include name="setUpBeforeClass"/>
-          <include name="Tc002_Verify_SignIn_page"/>
-          <include name="setUp"/>
-          <include name="tearDown"/>
-          <include name="tearDownAfterClass"/>
+          <include name="Pre_Condition"/>
+          <include name="Createoutput"/>
+          <include name="verify_login"/>
         </methods>
-      </class> <!-- framework.Testng.Testng_WebDriver_Testcase -->
+      </class> <!-- framework.Testng.DP.Excel_integration.Excel_DataProvider_Intergration -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -21,33 +21,39 @@ public class Excel_DataProvider_Intergration
 	String filepath="TestData\\InputData.xlsx";
 	
 	
-	@Test(dataProvider="get_data")
-	public void userLogin(String UID,String PWD)
+	
+	@Test(dataProvider="get_data",enabled=false)
+	public void verify_login(String username,String password)
 	{
 		
 	}
 	
+	@Test(dataProvider="get_data")
+	public void Verify_login_Result(String uid,String pwd,String Result)
+	{
+		
+	}
 	
+
 	@DataProvider
 	public String [][] get_data()
 	{
 		int Rcount=sht.getLastRowNum();
-		
+		int Ccount=sht.getRow(0).getLastCellNum();
 		String data[][];
-		data=new String[Rcount+1][2];
+		data=new String[Rcount+1][Ccount];
+		
 		for (int i = 0; i <= Rcount; i++) 
 		{
-			//Iterate for number of cells
-			for (int j = 0; j < 2; j++) 
+			for (int j = 0; j < Ccount; j++) 
 			{
-				data[i][j]=sht.getRow(i).getCell(j).getStringCellValue();
-				
+				 data[i][j]= sht.getRow(i).getCell(j).getStringCellValue();
 			}
 		}
 		
 		return data;
+		
 	}
-	
 	
 	
 
@@ -56,7 +62,7 @@ public class Excel_DataProvider_Intergration
 	{
 		FileInputStream fi=new FileInputStream(filepath);
 		book=new XSSFWorkbook(fi);
-		sht=book.getSheet("Sheet7");
+		sht=book.getSheet("Sheet6");
 		
 	}
 	

@@ -7,22 +7,14 @@ public class InputData
 {
 	
 	
-	@Test(dataProvider="User_login")
+	@Test(dataProvider="User_login",enabled=false)
 	public void Verify_user_login(String UID,String PWD)
 	{
 		
 	}
 	
-	@Test(dataProvider="Prduct_info")
+	@Test(dataProvider="Product_info")
 	public void Verify_Product_Prices(String Pname, double price, int Count)
-	{
-		
-	}
-	
-	
-	//To get dataprovier annoated data from diff class.
-	@Test(dataProvider="dp",dataProviderClass=Example_DataProvider.class)
-	public void sample(int a, String b)
 	{
 		
 	}
@@ -40,10 +32,11 @@ public class InputData
 			};
 		
 		return data;
+		
 	}
 	
 	 @DataProvider
-	  public Object[][] Prduct_info() 
+	  public Object[][] Product_info() 
 	  {
 	    return new Object[][] 
 	    {
