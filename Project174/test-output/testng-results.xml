@@ -1,59 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="608" started-at="2020-02-04T20:06:43 IST" finished-at="2020-02-04T20:06:43 IST">
+  <suite name="Default suite" duration-ms="16950" started-at="2020-02-05T19:34:43 IST" finished-at="2020-02-05T19:34:59 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="608" started-at="2020-02-04T20:06:43 IST" finished-at="2020-02-04T20:06:43 IST">
-      <class name="framework.Testng.Extent_Reports.Test_With_Reports">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:framework.Testng.Extent_Reports.Test_With_Reports@6321e813]" name="beforeClass" is-config="true" duration-ms="172" started-at="2020-02-04T20:06:43 IST" finished-at="2020-02-04T20:06:43 IST">
+    <test name="Default test" duration-ms="16950" started-at="2020-02-05T19:34:43 IST" finished-at="2020-02-05T19:34:59 IST">
+      <class name="method_parameters.Run_Repository_Using_Testng">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:method_parameters.Run_Repository_Using_Testng@63e2203c]" name="beforeClass" is-config="true" duration-ms="9153" started-at="2020-02-05T19:34:43 IST" finished-at="2020-02-05T19:34:52 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="User_login()[pri:0, instance:framework.Testng.Extent_Reports.Test_With_Reports@6321e813]" name="User_login" duration-ms="16" started-at="2020-02-04T20:06:43 IST" finished-at="2020-02-04T20:06:43 IST">
+        <test-method status="PASS" signature="TextEntry_with_Xpath()[pri:0, instance:method_parameters.Run_Repository_Using_Testng@63e2203c]" name="TextEntry_with_Xpath" duration-ms="377" started-at="2020-02-05T19:34:52 IST" finished-at="2020-02-05T19:34:52 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- User_login -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:framework.Testng.Extent_Reports.Test_With_Reports@6321e813]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2020-02-04T20:06:43 IST" finished-at="2020-02-04T20:06:43 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void framework.Testng.Extent_Reports.Test_With_Reports.User_login()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:framework.Testng.Extent_Reports.Test_With_Reports@6321e813]" name="afterClass" is-config="true" duration-ms="374" started-at="2020-02-04T20:06:43 IST" finished-at="2020-02-04T20:06:43 IST">
+        </test-method> <!-- TextEntry_with_Xpath -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:method_parameters.Run_Repository_Using_Testng@63e2203c]" name="afterClass" is-config="true" duration-ms="7387" started-at="2020-02-05T19:34:52 IST" finished-at="2020-02-05T19:34:59 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:framework.Testng.Extent_Reports.Test_With_Reports@6321e813]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2020-02-04T20:06:43 IST" finished-at="2020-02-04T20:06:43 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void framework.Testng.Extent_Reports.Test_With_Reports.User_reg()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:framework.Testng.Extent_Reports.Test_With_Reports@6321e813]" name="afterMethod" is-config="true" duration-ms="0" started-at="2020-02-04T20:06:43 IST" finished-at="2020-02-04T20:06:43 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:framework.Testng.Extent_Reports.Test_With_Reports@6321e813]" name="afterMethod" is-config="true" duration-ms="0" started-at="2020-02-04T20:06:43 IST" finished-at="2020-02-04T20:06:43 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="User_reg()[pri:0, instance:framework.Testng.Extent_Reports.Test_With_Reports@6321e813]" name="User_reg" duration-ms="0" started-at="2020-02-04T20:06:43 IST" finished-at="2020-02-04T20:06:43 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- User_reg -->
-      </class> <!-- framework.Testng.Extent_Reports.Test_With_Reports -->
+      </class> <!-- method_parameters.Run_Repository_Using_Testng -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
