@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="framework.Testng.DP.Excel_integration.Excel_DataProvider_Intergration">
+      <class name="method_return_type.Run_WebTable_Keyword">
         <methods>
-          <include name="Pre_Condition"/>
-          <include name="Createoutput"/>
-          <include name="verify_login"/>
+          <include name="tc001_Verify_static_Webtable_Records"/>
+          <include name="afterClass"/>
+          <include name="beforeClass"/>
         </methods>
-      </class> <!-- framework.Testng.DP.Excel_integration.Excel_DataProvider_Intergration -->
+      </class> <!-- method_return_type.Run_WebTable_Keyword -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
